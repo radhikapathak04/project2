@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9WF3qGPf_7AydU42_v52O_CjRtKBLXQPqw&s') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }  
+  
+  .container {
+    background: rgba(255, 255, 255, 0.85); /* slight transparency */
+    background-size: auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    backdrop-filter: blur(6px); /* blur behind */
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  #display {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .buttons button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .start  { background-color: #28a745; color: white; }
+  .pause  { background-color: #ffc107; color: white; }
+  .reset  { background-color: #dc3545; color: white; }
+  .lap    { background-color: #007bff; color: white; }
+  
+  .buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  #laps {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+  }
+  
+  #laps li {
+    background: #e9ecef;
+    margin-bottom: 6px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
